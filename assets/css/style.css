@@ -20,6 +20,7 @@
     transition: all 300ms linear;
     z-index: 1;
     background-color: #fff;
+
 }
 
 .sidebar.show {
@@ -73,6 +74,7 @@
     width: 230px;
     color: #fff;
     transition: 1s;
+    z-index: 1;
 }
 
 .open-btn:hover {
@@ -84,15 +86,17 @@
     cursor: pointer;
 }
 
-.bg-layer {
+.bglayer {
     position: relative;
 }
 
-.bg-layer {
+.bglayer {
     content: "";
     width: 100%;
     height: 100%;
-    position: absolute;
-    background-color: #b9b9b9;
+    position: fixed;
+    background: #b9b9b9;
     z-index: -1;
+    display: none;
+    opacity: 1.5;
 }
